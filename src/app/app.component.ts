@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'secmaster';
   bondselect(){
-    document.getElementById("button1").style.backgroundColor="white";
-    document.getElementById("button2").style.backgroundColor="gray";
+    document.getElementById("button1").style.borderColor="white";
+    document.getElementById("button2").style.borderColor="gray";
   }
   equityselect(){
-    document.getElementById("button2").style.backgroundColor="white";
-    document.getElementById("button1").style.backgroundColor="gray";
+    document.getElementById("button2").style.borderColor="white";
+    document.getElementById("button1").style.borderColor="gray";
   }
 }

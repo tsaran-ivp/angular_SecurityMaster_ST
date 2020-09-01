@@ -8,6 +8,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {BondModule} from './bond/bond.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EquityModule } from './equity/equity.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     ReactiveFormsModule,
     BondModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    EquityModule
   ],
   providers: [],
   bootstrap: [AppComponent]

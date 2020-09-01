@@ -3,6 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [];
 
+// const routes: Routes = [
+//   {path:'bond',component:BondtileComponent},
+//   {path:'equity',component:EquitytileComponent},
+//   {path:'',}
+// ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

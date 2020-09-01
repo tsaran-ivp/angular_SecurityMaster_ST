@@ -21,7 +21,6 @@ export class BondformComponent implements OnInit {
       this.service.formdata=null;
   
     }
-  
     onSubmit(form:NgForm){
       this.service.bondupdate(form.value).subscribe(res=>{
         alert("updated successfully");

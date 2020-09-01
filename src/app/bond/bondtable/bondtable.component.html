@@ -8,6 +8,8 @@
     <th>PfAssetClass </th>
     <th>IssueCurrency </th>
     <th>BBGTicker </th>
+    <th> </th>
+    <th> </th>
     </thead>
     <tr *ngFor="let bonditem of bondlist">
         <td>{{bonditem.SecurityName}}</td>
@@ -18,7 +20,7 @@
         <td>{{bonditem.PfAssetClass}}</td>
         <td>{{bonditem.IssueCurrency}}</td>
         <td>{{bonditem.BBGTicker}}</td>
-        <td><button (click)="populateform(bonditem)" class="btn btn-warning">UPDATE</button></td>
+        <td><button (click)="populateform(bonditem)"  class="btn btn-warning">UPDATE</button></td>
         <td><button (click)="deleteitem(bonditem.ID)" class="btn btn-outline-danger">X</button></td>
         
     </tr>

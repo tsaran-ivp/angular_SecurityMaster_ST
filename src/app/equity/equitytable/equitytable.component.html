@@ -1,0 +1,43 @@
+<p>equitytable works!</p>
+<table class="table table-hover">
+    <thread class="thread-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Security Name</th>
+            <th scope="col">Security Description</th>
+            <th scope="col">BBGGlobalID</th>
+            <th scope="col">TickerAndExchange</th>
+            <th scope="col">OutstandingShares </th>
+            <th scope="col">Exchange</th>
+            <th scope="col">IPODate</th>
+            <th scope="col">IssuerName</th>
+            <th scope="col">IssueCurrency </th>
+            <th scope="col">BBGIndustryGroup</th>
+            <th scope="col">BBGSector</th>
+            <th scope="col">OpenPrice</th>
+            <th scope="col">ClosePrice</th>
+
+        </tr>
+    </thread>
+    <tbody>
+    <tr *ngFor="let equityitem of equitylist">
+        <th scope="row">{{equityitem.ID}}</th>
+        <td>{{equityitem.SecurityName}}</td>
+        <td>{{equityitem.SecurityDescription}}</td>
+        <td>{{equityitem.BBGGlobalID}}</td>
+        <td>{{equityitem.TickerAndExchange}}</td>
+        <td>{{equityitem.OutstandingShares}}</td>
+        <td>{{equityitem.Exchange}}</td>
+        <td>{{equityitem.IPODate}}</td>
+        <td>{{equityitem.IssuerName}}</td>
+        <td>{{equityitem.IssueCurrency}}</td>
+        <td>{{equityitem.BBGIndustryGroup}}</td>
+        <td>{{equityitem.BBGSector}}</td>
+        <td>{{equityitem.OpenPrice}}</td>
+        <td>{{equityitem.ClosePrice}}</td>
+        <td><button (click)="populateform(equityitem)" class="btn btn-floating peach-gradient"><i class="icon-edit"></i></button></td>
+        <td><button (click)="deleteitem(equityitem.ID)" class="btn btn-outline-danger btn-floating "><i class="icon-trash"></i></button></td>
+        
+    </tr>
+    </tbody>    
+</table>

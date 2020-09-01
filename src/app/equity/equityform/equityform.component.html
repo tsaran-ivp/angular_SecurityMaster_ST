@@ -1,0 +1,70 @@
+<p>equityform works!</p>
+
+<mat-card>    
+    <mat-card-title>Equity Form  </mat-card-title>  
+
+    <mat-card-content>
+        <form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+            <div class="form-group">
+            <div class="row">
+                <div class="col-3">
+                    <label>ID</label>
+                    <input type="text" name="ID" #ID="ngModel" [(ngModel)]="service.formdata.ID" class="form-control" readonly="readonly"  >   
+                </div>
+               
+                <div class="col-3">
+                    <label>SecurityName</label>
+                    <input type="text" name="SecurityName" #SecurityName="ngModel" [(ngModel)]="service.formdata.SecurityName" class="form-control" readonly="readonly">   
+             
+                </div>
+                <div class="col-3">
+                    <label>SecurityDescription</label>
+                    <input type="text" name="SecurityDescription" #SecurityDescription="ngModel" [(ngModel)]="service.formdata.SecurityDescription" class="form-control" >   
+                </div>
+                <div class="col-3">
+                    <label>ISIN</label>
+                    <input type="text" name="ISIN" #ISIN="ngModel" [(ngModel)]="service.formdata.ISIN" class="form-control" readonly="readonly">   
+                </div>
+                <div class="col-3">
+                    <label>TickerAndExchange</label>
+                    <input type="text" name="TickerAndExchange" #TickerAndExchange="ngModel" [(ngModel)]="service.formdata.TickerAndExchange" class="form-control" readonly="readonly">   
+                </div>
+                <div class="col-3">
+                    <label>BBGTicker</label>
+                    <input type="text" name="BBGTicker" #BBGTicker="ngModel" [(ngModel)]="service.formdata.BBGTicker" class="form-control" readonly="readonly">   
+                </div>
+                <div class="col-3">
+                    <label>PricingCurrency</label>
+                    <input type="text" name="PricingCurrency" #PricingCurrency="ngModel" [(ngModel)]="service.formdata.PricingCurrency" class="form-control" readonly="readonly">   
+                </div>
+                <div class="col-3">
+                    <label>AssetClass</label>
+                    <input type="text" name="AssetClass" #AssetClass="ngModel" [(ngModel)]="service.formdata.AssetClass" class="form-control" readonly="readonly">   
+                </div>
+                <div class="col-3">
+                    <label>IssuerName</label>
+                    <input type="text" name="IssuerName" #IssuerName="ngModel" [(ngModel)]="service.formdata.IssuerName" class="form-control" readonly="readonly">   
+                </div>
+                <div class="col-3">
+                    <label>TradingCurrency</label>
+                    <input type="text" name="TradingCurrency" #TradingCurrency="ngModel" [(ngModel)]="service.formdata.TradingCurrency" class="form-control" readonly="readonly">   
+                </div>
+                <div class="col-3">
+                    <label>BBGIndustryGroup</label>
+                    <input type="text" name="BBGIndustryGroup" #BBGIndustryGroup="ngModel" [(ngModel)]="service.formdata.BBGIndustryGroup" class="form-control" readonly="readonly">   
+                </div>
+                <div class="col-3">
+                    <label>BBGSector</label>
+                    <input type="text" name="BBGSector" #BBGSector="ngModel" [(ngModel)]="service.formdata.BBGSector" class="form-control" readonly="readonly">   
+                </div>
+
+
+
+                <br><br>
+                <div></div>
+                <button type="submit" class="btn btn-lg btn-block btn-info">submit</button>
+            </div>
+            </div>  
+        </form>
+    </mat-card-content>
+</mat-card>

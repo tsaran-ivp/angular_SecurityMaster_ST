@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <thead class="thead-dark">
+    <th>Security Name</th>
+    <th>Security Description</th>
+    <th>Asset Type</th>
+    <th>Investment Type</th>
+    <th>ISIN </th>
+    <th>PfAssetClass </th>
+    <th>IssueCurrency </th>
+    <th>BBGTicker </th>
+    </thead>
+    <tr *ngFor="let bonditem of bondlist">
+        <td>{{bonditem.SecurityName}}</td>
+        <td>{{bonditem.SecurityDescription}}</td>
+        <td>{{bonditem.AssetType}}</td>
+        <td>{{bonditem.InvestmentType}}</td>
+        <td>{{bonditem.ISIN}}</td>
+        <td>{{bonditem.PfAssetClass}}</td>
+        <td>{{bonditem.IssueCurrency}}</td>
+        <td>{{bonditem.BBGTicker}}</td>
+        <td><button (click)="populateform(bonditem)" class="btn btn-warning">UPDATE</button></td>
+        <td><button (click)="deleteitem(bonditem.ID)" class="btn btn-outline-danger">X</button></td>
+        
+    </tr>
+</table>
+
+

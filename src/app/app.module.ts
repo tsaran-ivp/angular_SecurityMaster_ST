@@ -4,13 +4,23 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import {BondModule} from './bond/bond.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BondModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

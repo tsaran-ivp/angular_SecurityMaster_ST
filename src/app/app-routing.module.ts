@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {BondtileComponent} from './bond/bondtile/bondtile.component';
+import {EquitytileComponent} from './equity/equitytile/equitytile.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'bond',component:BondtileComponent},
+  {path:'equity',component:EquitytileComponent},
 
-// const routes: Routes = [
-//   {path:'bond',component:BondtileComponent},
-//   {path:'equity',component:EquitytileComponent},
-//   {path:'',}
-// ];
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

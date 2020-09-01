@@ -1,8 +1,9 @@
-<p>equityform works!</p>
-
+<hr><hr><hr>
+    <br>
 <mat-card>    
     <mat-card-title>Equity Form  </mat-card-title>  
-
+    <br>
+    <hr>
     <mat-card-content>
         <form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
             <div class="form-group">
@@ -58,12 +59,12 @@
                     <input type="text" name="BBGSector" #BBGSector="ngModel" [(ngModel)]="service.formdata.BBGSector" class="form-control" readonly="readonly">   
                 </div>
 
-
-
-                <br><br>
-                <div></div>
-                <button type="submit" class="btn btn-lg btn-block btn-info">submit</button>
             </div>
+
+             
+              <br><br>
+                <button type="submit" class="btn btn-lg btn-block btn-info">submit</button>
+         
             </div>  
         </form>
     </mat-card-content>

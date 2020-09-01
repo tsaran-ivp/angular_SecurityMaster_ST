@@ -1,6 +1,5 @@
-<p>equitytable works!</p>
 <table class="table table-hover">
-    <thread class="thread-dark">
+    <thead class="thead-dark">
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Security Name</th>
@@ -18,7 +17,7 @@
             <th scope="col">ClosePrice</th>
 
         </tr>
-    </thread>
+    </thead>
     <tbody>
     <tr *ngFor="let equityitem of equitylist">
         <th scope="row">{{equityitem.ID}}</th>

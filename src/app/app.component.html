@@ -1,13 +1,12 @@
 <div class="container">
-<app-bondupload></app-bondupload>
-    <app-bondtable></app-bondtable>
-<app-bondform></app-bondform>
+<ul class="nav nav-pills nav-fill">
+    <li class="nav-item"><button class="btn btn-lg btn-block"><a class="nav-link" routerLink="bond">BONDS</a></button>
 
+    </li>
+    <li class="nav-item"><button class="btn btn-lg btn-block">
+      <a class="nav-link" routerLink="equity">EQUITIES</a></button>
+    </li>
+</ul>
+<hr><hr>
+<router-outlet></router-outlet>
 </div>
-
-<!-- <button routerLink="bond">bond</button>
-<button routerLink="equity">equity</button>
-
-    <router-outlet></router-outlet>
-
- -->

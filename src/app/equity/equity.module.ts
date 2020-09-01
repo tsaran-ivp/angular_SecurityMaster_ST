@@ -14,10 +14,11 @@ import { MatCardModule, MatCard} from '@angular/material/card';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
+import { EquitytileComponent } from './equitytile/equitytile.component';
 
 
 @NgModule({
-  declarations: [EquityformComponent, EquitytableComponent, EquityuploadComponent],
+  declarations: [EquityformComponent, EquitytableComponent, EquityuploadComponent, EquitytileComponent],
   imports: [
     CommonModule,
     HttpClientModule,
@@ -29,7 +30,7 @@ import {MatInputModule} from '@angular/material/input';
     MatInputModule
   ],
   exports:[
-    EquityformComponent,EquitytableComponent,EquityuploadComponent
+    EquityformComponent,EquitytableComponent,EquityuploadComponent,EquitytileComponent
   ],
   providers:[SecurityequityService]
 

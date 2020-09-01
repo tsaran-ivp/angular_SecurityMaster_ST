@@ -14,9 +14,10 @@ import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import { BonduploadComponent } from './bondupload/bondupload.component';
+import { BondtileComponent } from './bondtile/bondtile.component';
 
 @NgModule({
-  declarations: [BondtableComponent, BondformComponent, BonduploadComponent],
+  declarations: [BondtableComponent, BondformComponent, BonduploadComponent, BondtileComponent],
   imports: [
     CommonModule,
     HttpClientModule,
@@ -29,7 +30,7 @@ import { BonduploadComponent } from './bondupload/bondupload.component';
     
   ],
   exports: [
-    BondtableComponent,BondformComponent,BonduploadComponent
+    BondtableComponent,BondformComponent,BonduploadComponent,BondtileComponent
   ],
   providers: [SecuritybondService]
 })
